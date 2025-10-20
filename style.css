@@ -53,5 +53,62 @@
         padding: 2rem;
         flex-wrap: wrap;
     }
+ .filter-buttons {
+        display: flex;
+        gap: .6rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .filter-buttons button {
+        border: none;
+        padding: .4rem .9rem;
+        border-radius: 8px;
+        background: #f2f2f2;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .filter-buttons .active {
+        background: #7b5efc;
+        color: white;
+    }
+
+    .tasks-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1rem;
+    }
+
+    .task-card {
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 1rem;
+        background: white;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+
+    .task-card h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: .4rem;
+    }
+
+    .badge {
+        display: inline-block;
+        font-size: .8rem;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-weight: 600;
+    }
+
+    .badge.high { background: #ffd5d5; color: #d93025; }
+    .badge.medium { background: #ffeac2; color: #b36200; }
+    .badge.low { background: #c9f5d6; color: #137333; }
+
+    .status-dot {
+        font-size: .8rem;
+        margin-left: 8px;
+        color: #555;
+    }
 
     

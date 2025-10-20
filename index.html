@@ -1,74 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TaskManager Dashboard</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskManager Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
 <body>
 
-<header>
-    <div class="logo"><span>TM</span> TaskManager</div>
-    <nav>
-        <a href="#" class="active">Dashboard</a>
-        <a href="#">Tasks</a>
-        <a href="#">Profile</a>
-    </nav>
-</header>
+    <header>
+        <div class="logo"><span>TM</span> TaskManager</div>
+        <nav>
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Tasks</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
 
-<section class="dashboard">
-    <div class="create task">
-        <h2>📝 Create New Task</h2>
-        <form>
-            <label>Task Name*</label>
-            <input type="text" placeholder="Task Name" required>
+    <section class="dashboard">
+        <div class="create task">
+            <h2>📝 Create New Task</h2>
+            <form>
+                <label>Task Name*</label>
+                <input type="text" placeholder="Task Name" required>
 
-            <label>Assignee Email*</label>
-            <input type="email" placeholder="Task Name" required>
+                <label>Assignee Email*</label>
+                <input type="email" placeholder="Assignee email" required>
 
-            <label>Due Date*</label>
-            <input type="date" required>
+                <label>Due Date*</label>
+                <input type="date" required>
 
-            <label>Due Time</label>
-            <input type="time" required>
+                <label>Due Time</label>
+                <input type="time" required>
 
-            <label> Priority Level</label>
-            <select>
-                <option>Low Priority</option>
-                <option>Medium Priority</option>
-                <option>High Priority</option>
-            </select>
-            <label>Estimated Hours</label>
-            <input type="number" placeholder="e.g:16">
+                <label> Priority Level</label>
+                <select>
+                    <option>Low Priority</option>
+                    <option>Medium Priority</option>
+                    <option>High Priority</option>
+                </select>
+                <label>Estimated Hours</label>
+                <input type="number" placeholder="e.g:16">
 
-            <label>Project URL</label>
-            <input type="url" placeholder="https://project-link.com">
+                <label>Project URL</label>
+                <input type="url" placeholder="https://project-link.com">
 
-            <label>Task Description</label>
-            <textarea rows="3" placeholder="Describe the task"></textarea>
+                <label>Task Description</label>
+                <textarea rows="3" placeholder="Describe the task"></textarea>
 
-            <div class="task progress">
-                <label>Task Progress</label>
-                <input type="range" value="0" min="0" max="100">
+                <div class="task progress">
+                    <label>Task Progress</label>
+                    <input type="range" value="0" min="0" max="100">
+                </div>
+
+                <div class="task types">
+                    <label><input type="checkbox" checked>Bug Fix</label>
+                    <label><input type="checkbox">Feature</label>
+                    <label><input type="checkbox">Enhancement</label>
+                </div>
+                <div class="status">
+                    <label><input type="radio" name="status" checked>Pending</label>
+                    <label><input type="radio" name="status">In Progress</label>
+                    <label><input type="radio" name="status"> Completed</label>
+                </div>
+                <div class="upload box"> 🔗 Click to upload attachments<br>Supported:PDF,DOC,Images</div>
+                <div class="butons">
+                    <button class="create button"> Create task</button>
+                    <button class="reset buttton" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="active-tasks">
+            <h2>✅ Active Tasks</h2>
+            <div class="filter-buttons">
+                <button class="active">All</button>
+                <button>High</button>
+                <button>Medium</button>
+                <button>Low</button>
             </div>
-            
-            <div class="task types">
-                <label><input type="checkbox" checked>Bug Fix</label>
-                <label><input type="checkbox">Feature</label>
-                <label><input type="checkbox">Enhancement</label>
-            </div>
-            <div class="status">
-                <label><input type="radio" name="status" checked>Pending</label>
-                <label><input type="radio" name="status">In Progress</label>
-                <label><input type="radio" name="status"> Completed</label>
-            </div>
-            <div class="upload box"> 🔗 Click to upload attachments<br>Supported:PDF,DOC,Images</div>
-            <div class="butons">
-                <button class="create button"> Create task</button>
-                <button class="reset buttton" type="reset">Reset</button>
-            </div>
-        </form>
-    </div>
 
-    
-</section>
+            <div class="tasks-grid">
+                <div class="task-card">
+                    <h4>Design Homepage Mockup</h4>
+                    <p>Create wireframes and high-fidelity mockups for the homepage redesign.</p>
+                    <p>📅 Due: Oct 20, 2025</p>
+                    <p>👤 Sarah Johnson</p>
+                    <span class="badge high">HIGH</span>
+                    <span class="status-dot">• In Progress</span>
+                </div>
+                <div class="task-card">
+                    <h4>Fix Login Authentication Bug</h4>
+                    <p>Resolve the issue where users are logged out unexpectedly.</p>
+                    <p>📅 Due: Oct 15, 2025</p>
+                    <p>👤 Michael Chen</p>
+                    <span class="badge high">HIGH</span>
+                    <span class="status-dot">• Pending</span>
+                </div>
+
+                <div class="task-card">
+                    <h4>Update Documentation</h4>
+                    <p>Review and update API documentation with new endpoint examples.</p>
+                    <p>📅 Due: Oct 25, 2025</p>
+                    <p>👤 Emily Rodriguez</p>
+                    <span class="badge medium">MEDIUM</span>
+                    <span class="status-dot">• In Progress</span>
+                </div>
+    </section>
