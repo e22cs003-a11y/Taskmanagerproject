@@ -1,126 +1,616 @@
-<style>* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*{
+    padding: 0%;
+    margin: 0%;
 }
-
-body {
-    background: white;
-    color: #333;
-}
-
-header {
-    background: white;
-    padding: 16px 32px;
+.header{
+    height: 8vh;
+    width: 95wv;
+    border: 1px solid black;
+    margin: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 1px 4px black;
+    flex-direction: row;
+    box-shadow: 1px 1px 9px black;
+    gap: 15px;
 }
-
-.logo {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #453636;
-
-
-}
-
-.logo span {
-    color: #7b5efc;
-}
-
-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #555;
-    font-weight: 500;
-}
-
-nav a.active {
-    background: white;
-    padding: 6px 12px;
-    border-radius: 6px;
-    color: #7b5efc;
-}
-
-.dashboard {
+#logo{
+    height: 5vh;
+    width: 3vw;
+    border: 1px solid #756efe;
+    background-image: linear-gradient(rgb(78, 87, 248),rgb(140, 86, 180));
+    color: white;
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
 }
-
-.filter-buttons {
+.header h2{
+    margin-top: 15px;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+.header nav{
+    height: 5vh;
+    width: 15vw;
     display: flex;
-    gap: .6rem;
-    margin-bottom: 1.2rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60vw;
+    gap: 30px;
+    margin-top: 10px;
+    color: gray;
 }
-
-.filter-buttons button {
-    border: none;
-    padding: .4rem .9rem;
-    border-radius: 8px;
-    background: #f2f2f2;
+.header nav h4:hover{
+    padding: 4px;
+    /* border: 3px solid rgb(204, 202, 202); */
+    /* border-radius: 8px; */
+    background-color: rgb(204, 202, 202);
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
-    font-weight: 500;
+}
+.title{
+    height: 10vh;
+    width:45vh;
+    /* border: 3px solid black;  */
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;  */
+    align-items: center;
+}
+.title div{
+    height:50px;
+    width: 5px;
+    /* border: 3px solid black;  */
+    border-radius: 5px;
+    margin: 10px;
+    background-image: linear-gradient(rgb(78, 87, 248),rgb(140, 86, 180));
+}
+.title h2{
+    font-size: 30px ;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.filter-buttons .active {
-    background: #7b5efc;
+
+.main-Box{
+    height: 100vh;
+    width: 95vw;
+    /* border: 3px solid black;  */
+    margin: 8px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     /* align-items: center;  */
+    gap: 50px;
+}
+#first-Box{
+    height: 170vh;
+    width: 30vw;
+    border: 0px solid black;
+    /* box-shadow: 2px 2px 10px  black; */
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.second-Box{
+    height: 150vh;
+    width: 60vw;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 20px;
+    border-radius:6px ;
+}
+#first-Box h2{
+    height: 5vh;
+    width: 25vw;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* #first-Box .inp11{
+    height: 500px;
+    width: 300px;
+    border :3px solid black;
+    margin-left: 30px;
+    padding-left: 15px;
+}
+#first-Box .inp11 .inp1{
+    padding: 10px;
+    width:20vw;
+    border-radius: 5px;
+    border: 1px solid red;
+} */
+/* .second-Box{
+    display: flex;
+    flex-direction: row ;
+} */
+ form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height:600px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"], input[type="url"], select {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+input[required] {
+  border: 1px solid red;
+}
+
+select {
+  appearance: none;
+}
+
+#taskName, #assigneeEmail, #dueDate {
+  border: 1px solid red;
+}
+.task-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-progress, .task-color, .task-type, .status, .attachments {
+  margin-bottom: 15px;
+}
+
+.task-type div, .status div {
+  margin-bottom: 5px;
+}
+
+input[type="color"] {
+  border: none;
+  padding: 0;
+  height: 30px;
+  width: 50px;
+}
+
+button.create-task {
+  background-color: blue;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.reset {
+  background-color: #ccc;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.attachments button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.attachments p {
+  font-size: 12px;
+  color: #666;
+}
+.second-Box .sub-header{
+    height:10vh;
+    width: 50vw;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 200px;
+}
+.second-Box .sub-header h2 {
+    height: 9vh;
+    width: 15vw;
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.second-Box .sub-header nav{
+    height: 9vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.second-Box .sub-header nav a{
+    width: 200px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.second-Box .sub-header nav a:hover{
+    border: 1px solid rgb(78, 87, 248) ;
+    background-color: rgb(78, 87, 248);
     color: white;
 }
-
-.tasks-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 1rem;
+.main-card{
+    height: 30vh;
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px;
+    margin-left: 30px;
 }
-
-.task-card {
-    border: 1px solid #eee;
+#card1{
+    height: 39vh;
+    width: 25vw;
+    border: 0.5px solid black;
+    margin-top: 2px;
+    margin-left: 20px;
     border-radius: 10px;
-    padding: 1rem;
-    background: white;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+#card1 h3{
+    margin: 20px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#card1  #para{
+    margin: 10px 10px;
+    margin: 20px 20px;
+}
+#card1 #date{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#card1 #name{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#card1 #line{
+    width: 22vw;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#card1 #info{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+#card1 #info #Progress{
+    width: 40px;
+    margin-left: 28px;
+    margin-top: 3px;
+    background-color: rgb(235, 163, 163);
+    padding: 5px;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+} 
+#card1 #info #Progress2{
+    margin-left: 100px;
+    margin-top: 5px;
+}
+#card2{
+    height: 39vh;
+    width: 25vw;
+    border: 1px solid black;
+    margin-top: 2px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+#card2 h3{
+    margin: 20px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#card2  #para{
+    margin: 10px 10px;
+    margin: 20px 20px;
+}
+#card2 #date{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#card2 #name{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#card2 #line{
+    width: 22vw;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#card2 #info{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+#card2 #info #Progress{
+    width: 40px;
+    margin-left: 28px;
+    margin-top: 3px;
+    background-color: rgb(235, 163, 163);
+    padding: 5px;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+} 
+#card2 #info #Progress2{
+    margin-left: 100px;
+    margin-top: 5px;
+}
+.main-card2{
+    height: 30vh;
+    width: 55vw;
+   display:flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+#card3{
+    height: 39vh;
+    width: 25vw;
+    border: 0.5px solid black;
+    margin-top: 2px;
+    margin-left: 20px;
+    border-radius: 10px;
+    
+}
+#card3 h3{
+    margin: 20px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#card3  #para{
+    margin: 10px 10px;
+    margin: 20px 20px;
+}
+#card3 #date{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#card3 #name{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#card3 #line{
+    width: 22vw;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#card3 #info{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+#card3 #info #Progress{
+    width: 40px;
+    margin-left: 28px;
+    margin-top: 3px;
+    background-color: rgb(235, 163, 163);
+    padding: 5px;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+} 
+#card3 #info #Progress2{
+    margin-left: 100px;
+    margin-top: 5px;
+}
+#card4{
+    height: 39vh;
+    width: 25vw;
+    border: 1px solid black;
+    margin-top: 2px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+#card4 h3{
+    margin: 20px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#card4  #para{
+    margin: 10px 10px;
+    margin: 20px 20px;
+}
+#card4 #date{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#card4 #name{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#card4 #line{
+    width: 22vw;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#card4 #info{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+#card4 #info #Progress{
+    width: 40px;
+    margin-left: 28px;
+    margin-top: 3px;
+    background-color: rgb(235, 163, 163);
+    padding: 5px;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+} 
+#card4 #info #Progress2{
+    margin-left: 100px;
+    margin-top: 5px;
+}
+.main-card3{
+    height: 30vh;
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+#card5{
+    height: 39vh;
+    width: 25vw;
+    border: 0.5px solid black;
+    margin-top: 2px;
+    margin-left: 20px;
+    border-radius: 10px;
+    
+}
+#card5 h3{
+    margin: 20px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#card5  #para{
+    margin: 10px 10px;
+    margin: 20px 20px;
+}
+#card5 #date{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#card5 #name{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#card5 #line{
+    width: 22vw;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#card5 #info{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+#card5 #info #Progress{
+    width: 40px;
+    margin-left: 28px;
+    margin-top: 3px;
+    background-color: rgb(235, 163, 163);
+    padding: 5px;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+} 
+#card5 #info #Progress2{
+    margin-left: 100px;
+    margin-top: 5px;
+}
+#card6{
+    height: 39vh;
+    width: 25vw;
+    border: 1px solid black;
+    margin-top: 2px;
+    margin-left: 30px;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 10px black; */
+}
+#card6 h3{
+    margin: 20px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#card6  #para{
+    margin: 10px 10px;
+    margin: 20px 20px;
+}
+#card6 #date{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+#card6 #name{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#card6 #line{
+    width: 22vw;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#card6 #info{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+#card6 #info #Progress{
+    width: 40px;
+    margin-left: 28px;
+    margin-top: 3px;
+    background-color: rgb(235, 163, 163);
+    padding: 5px;
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+} 
+#card6 #info #Progress2{
+    margin-left: 100px;
+    margin-top: 5px;
 }
 
-.task-card h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: .4rem;
-}
-
-.badge {
-    display: inline-block;
-    font-size: .8rem;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-weight: 600;
-}
-
-.badge.high {
-    background: #ffd5d5;
-    color: #d93025;
-}
-
-.badge.medium {
-    background: #ffeac2;
-    color: #b36200;
-}
-
-.badge.low {
-    background: #c9f5d6;
-    color: #137333;
-}
-
-.status-dot {
-    font-size: .8rem;
-    margin-left: 8px;
-    color: #555;
-}
 
 footer {
         margin-top: 3rem;
