@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskManager Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div id="logo"> TM </div>
         <h2>Task Manager</h2>
         <nav>
@@ -16,45 +17,49 @@
             <h4>Tasks</h4>
             <h4>Profiles</h4>
         </nav>
-    </div>
-    <div class="title">
-        <div id="horizontal-line"></div>
+        </header>
+    
+    <section class="title">
+    <div id="horizontal-line"></div>
         <h2>Task Dashboard</h2>
-    </div>
-    <div class="main-Box">
+    </section>
+    <main class="main-Box">
         <div id="first-Box">
-            <h2>📝Create Note Task</h2>
+            <h2>📝Create New Task</h2>
             <form>
                 <label for="taskName">Task Name *</label>
                 <input type="text" id="taskName" placeholder="Task Name*" required>
 
-                <label for="assigneeEmail">Assignee Email *</label>
-                <input type="email" id="assigneeEmail" placeholder="Assignee email" required>
+                <label for="AssigneeEmail">AssigneeEmail *</label>
+                <input type="email" id="AssigneeEmail" placeholder="Assignee email" required>
 
                 <label for="dueDate">Due Date *</label>
-                <input type="date" id="dueDate" placeholder="dd/mm/yyyy" required>
+                <input type="date" id="Duedate" placeholder="dd/mm/yyyy" required>
 
                 <label for="dueTime">Due Time</label>
-                <input type="time" id="dueTime">
+                <input type="time" id="DueTime">
 
                 <label for="priorityLevel">Priority Level *</label>
                 <select id="priorityLevel" required>
                     <option value="Low Priority">Low Priority</option>
+                    <option value="Medium Priority">Medium Priority</option>
+                    <option value="High Priority">High Priority</option>
                 </select>
 
                 <label for="estimatedHours">Estimated Hours</label>
                 <input type="number" id="estimatedHours" value="54">
 
                 <label for="projectURL">Project URL</label>
-                <input type="url" id="projectURL">
+                <input type="url" id="projectURL" placeholder="Project URL">
                 <div class="task-form">
                     <div class="task-progress">
-                        <span>Task Progress</span>
-                        <span>0%</span>
-                    </div>
+                        <label>Task Progress</label>
+                        <input type="range" min="0" max="100"value="0">
+                        </div>
+                
                     <div class="task-color">
                         <label>Task Color</label>
-                        <input type="color" value="">
+                        <input type="color" value="#1e1e1e">
                     </div>
                     <div class=" task-type">
                         <label>Task Type</label>
@@ -87,51 +92,28 @@
                         </div>
                     </div>
                     <div class="attachments">
-                        <button>Click to upload attachments</button>
+                        <button type="button">Click to upload attachments</button>
                         <p>Supported: PDF, DOC, Images</p>
                     </div>
                     <div class="actions">
-                        <button class="create-task">Create Task</button>
-                        <button class="reset">Reset</button>
+                        <button type="submit" class="create-task">Create Task</button>
+                        <button type="reset" class="reset">Reset</button>
                     </div>
-                </div>
-            </form>
-        </div>
+                    </div>
+                    </form>
+                    </div>
+                
+
+           
         <div class="second-Box">
             <div class="sub-header">
                 <h2>✅Active Task</h2>
                 <nav>
-                    <a href="">All</a>
-                    <a href="">High</a>
-                    <a href="">Medium</a>
-                    <a href="">Low</a>
+                    <a href="#">All</a>
+                    <a href="#"> High</a>
+                    <a href="#">Medium</a>
+                    <a href="#">Low</a>
                 </nav>
-            </div>
-            <div class="main-card">
-                <div id="card1">
-                    <h3>Design Homepage Mockup</h3>
-                    <p id="para">create wireframes and high-fidelity mockups for new homwpage redesign project with
-                        modern UI elements</p>
-                    <p id="date">🗓️ Due : Oct 20 , 2025</p>
-                    <p id="name">👤 Sarah Johnson</p>
-                    <hr id="line">
-                    <div id="info">
-                        <p id="Progress">HIGH</p>
-                        <p id="Progress2">🔵In Progress</p>
-                    </div>
-                </div>
-                <div id="card2">
-                    <h3>Fix Login Authentication Bug</h3>
-                    <p id="para">Resolve the issue where users are logged out unexpectedly after 5 minutes of inactivity
-                    </p>
-                    <p id="date">🗓️ Due : Oct 15 , 2025</p>
-                    <p id="name">👤 Michael Chen</p>
-                    <hr id="line">
-                    <div id="info">
-                        <p id="Progress">HIGH</p>
-                        <p id="Progress2">🔵In Progress</p>
-                    </div>
-                </div>
             </div>
             <div class="main-card2">
                 <div id="card3">
@@ -140,7 +122,7 @@
                         modern UI elements</p>
                     <p id="date">🗓️ Due : Oct 20 , 2025</p>
                     <p id="name">👤 Sarah Johnson</p>
-                    <hr id="line">
+                    <hr id="line"  />
                     <div id="info">
                         <p id="Progress">HIGH</p>
                         <p id="Progress2">🔵In Progress</p>
@@ -154,24 +136,24 @@
                     <p id="name">👤 Michael Chen</p>
                     <hr id="line">
                     <div id="info">
-                        <p id="Progress">HIGH</p>
+                        <p id="Progress">MEDIUM</p>
                         <p id="Progress2">🔵In Progress</p>
                     </div>
                 </div>
             </div>
             <div class="main-card3">
-                <div id="card4">
+                <div id="card5">
                     <h3>Implement Dark Mode</h3>
                     <p id="para">Add dark mode theme support across the application with user preference persistence</p>
                     <p id="date">🗓️ Due : Nov 05 , 2025</p>
                     <p id="name">👤 Alex Thompson</p>
                     <hr id="line">
                     <div id="info">
-                        <p id="Progress">Low</p>
+                        <p id="Progress">HIGH</p>
                         <p id="Progress2">🔵In Progress</p>
                     </div>
                 </div>
-                <div id="card5">
+                <div id="card6">
                     <h3>User Testing Session</h3>
                     <p id="para">Conduct user testing sessions with 10 participants to gather feedback on the new
                         interface</p>
@@ -179,46 +161,54 @@
                     <p id="name">👤 Lisa Anderson</p>
                     <hr id="line">
                     <div id="info">
-                        <p id="Progress">HIGH</p>
+                        <p id="Progress">MEDIUM</p>
                         <p id="Progress2">completed</p>
                     </div>
                 </div>
             </div>
         </div>
-
-</body>
+        </main>
 
 <footer>
-    <div>
-        <h4>TaskManager</h4>
-        <p>Organize your work and life,finally.</p>
-    </div>
-    <div>
-        <h4>Features</h4>
-        <a href="#">Task Management</a>
-        <a href="#">Team Collaboration</a>
-        <a href="#">Analytics</a>
-        <a href="#">Integrations</a>
-    </div>
-    <div>
+        <div class="footer-columns">
+            <div>
+                <h3>TaskManager</h3>
+                <p>Organize your work,boost your productivity.</p>
+            </div>
+
+            <div>
+                <h4>Features</h4>
+                <ul>
+                    <li>Task Management</li>
+                    <li>Team Collaboration</li>
+                    <li>Analytics</li>
+                    <li>Integrations</li>
+                </ul>
+            </div>
+        <div>
         <h4>Resources</h4>
-        <a href="#">Documentation</a>
-        <a href="#">Tutorials</a>
-        <a href="#">API Reference</a>
-        <a href="#">Support</a>
+        <ul>
+            <li>Documentation</li>
+            <li>Tutorials</li>
+            <li>API Reference</li>
+            <li>Support</li>
+        </ul>
     </div>
-    <div>
-        <h4>Company</h4>
-        <a href="#">About Us</a>
-        <a href="#">Careers</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terrms of Service</a>
+    
+<div>
+    <h4>Company</h4>
+    <ul>
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+    </ul>
     </div>
-</footer>
-<div class="bottom-note">
-    © 2025 TaskManager. All rights reserved. Built with ❤️ for productivity.
 </div>
-
+<hr>
+<p class="footer-bottom">
+ | © 2025 TaskManager.All rights reserved.Built with ❤️ for productivity.
+</p>
+</footer>
 </body>
-
 </html>
