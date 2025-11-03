@@ -181,13 +181,8 @@ input[type="range"] {
   height: 100px;
   text-align: left;
   padding-top: 30px;
-  margin-left: 10px;
-
-
-
+  /* margin-left: 10px; */
 }
-
-
 
 .create-task input[type="color"] {
   width: 100%;
@@ -202,7 +197,7 @@ input[type="range"] {
 }
 
 .progress-text {
-  color: #637aff;
+  color: #6c63ff;
   font-weight: bold;
   text-align: center;
 }
@@ -269,15 +264,14 @@ input[type="range"] {
 
 .checkbox-group,
 .radio-group {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 8px;
+  align-items: center;
 }
 
 input[type="checkbox"] {
   accent-color: #6c63ff;
-
 }
 
 input[type="radio"] {
@@ -315,6 +309,9 @@ input[type="radio"] {
   border-radius: 8px;
   padding: 10px;
   cursor: pointer;
+  width:70%;
+  font-size:15px;
+  font-weight:600;
 }
 
 .create-btn:hover {
@@ -390,7 +387,14 @@ input[type="radio"] {
 
 .task-card .details p {
   font-size: 0.9em;
-  color: #555;
+  color: #777;
+}
+
+.tasks-grid p{
+  color:#777;
+  font-size:1.0rem;
+  font-weight:400;
+
 }
 
 .task-card:hover {
@@ -448,6 +452,39 @@ input[type="radio"] {
   background: #aab5f0;
 }
 
+
+
+/* RESET BUTTON */
+.reset-btn {
+    background: #fff;
+    border: 2px solid #dcdcdc;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    gap: 4px;                
+    width: 70px;             
+    height: 70px;             
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* icon size */
+.reset-btn .reset-icon {
+    font-size: 20px; 
+    padding:2px;       
+}
+
+
+
+
+
+
+
 /* FOOTER */
 footer {
   background: #fff;
@@ -470,14 +507,6 @@ footer {
   color: #666;
 }
 
-
-/* Ensure header aligns items properly */
-/*.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative; 
-}*/
 body {
   overflow-X: hidden;
   overflow-Y: auto;
@@ -489,9 +518,9 @@ body {
   font-size: 26px;
   cursor: pointer;
   color: #333;
-  position: absolute;
+  position: center;
   right: 25px;
-  top: 22px;
+  top: 10px;
 }
 
 /* ========== RESPONSIVE DESIGN ========== */
@@ -521,6 +550,7 @@ body {
   .footer-note {
     text-align: center;
     margin-top: 20px;
+    
   }
 }
 
@@ -611,10 +641,7 @@ body {
   }
 }
 
-
-
-
-
+/* menu icon */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -654,3 +681,42 @@ body {
     color: #6c63ff;
   }
 }
+
+/* Button container */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 25px;
+}
+
+/* Common button styles */
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* Create button */
+.create-btn {
+    background: linear-gradient(90deg, #4b4ded, #5b77ff);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+/* Reset button */
+.reset-btn {
+    background: #fff;
+    color: #333;
+    border: 2px solid #dcdcdc;
+    flex: 1;
+}
+
