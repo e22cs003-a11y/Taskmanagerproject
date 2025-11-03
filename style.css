@@ -176,9 +176,17 @@ input[type="range"] {
 .create-task textarea {
 
     resize: vertical;
-    height: 150px;
+    height: 100px;
+
+    text-align:left;
+    padding-top:30px;
+    margin-left:10px;
+
+
    
 }
+
+
 
 .create-task input[type="color"] {
     width: 100%;
