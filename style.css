@@ -67,7 +67,7 @@ body {
 
 .nav a:hover {
   color: #6c63ff;
-  background:#edeaff;
+  background: #edeaff;
 }
 
 .filters:hover {
@@ -301,9 +301,9 @@ input[type="radio"] {
   border-radius: 8px;
   padding: 10px;
   cursor: pointer;
-  width:70%;
-  font-size:15px;
-  font-weight:600;
+  width: 70%;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .create-btn:hover {
@@ -382,10 +382,10 @@ input[type="radio"] {
   color: #777;
 }
 
-.tasks-grid p{
-  color:#777;
-  font-size:1.0rem;
-  font-weight:400;
+.tasks-grid p {
+  color: #777;
+  font-size: 1.0rem;
+  font-weight: 400;
 
 }
 
@@ -406,6 +406,7 @@ input[type="radio"] {
   background: #f4c5c5;
   padding: 3px 8px;
   border-radius: 10px;
+  
 }
 
 .priority.medium {
@@ -424,12 +425,13 @@ input[type="radio"] {
 
 .status.inprogress {
   color: #3f51b5;
-  
+
 
 }
 
 .status.pending {
   color: #ff9800;
+  
 }
 
 .status.completed {
@@ -449,27 +451,27 @@ input[type="radio"] {
 
 /* RESET BUTTON */
 .reset-btn {
-    background: #fff;
-    border: 2px solid #dcdcdc;
-    color: #333;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;  
-    align-items: center;
-    justify-content: center;
-    gap: 4px;                
-    width: 70px;             
-    height: 70px;             
-    font-size: 14px;
-    font-weight: 600;
+  background: #fff;
+  border: 2px solid #dcdcdc;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 70px;
+  height: 70px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* icon size */
 .reset-btn .reset-icon {
-    font-size: 20px; 
-    padding:2px;       
+  font-size: 20px;
+  padding: 2px;
 }
 
 
@@ -543,7 +545,7 @@ body {
   .footer-note {
     text-align: center;
     margin-top: 20px;
-    
+
   }
 }
 
@@ -677,39 +679,38 @@ body {
 
 /* Button container */
 .form-actions {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 25px;
 }
 
 /* Common button styles */
 .btn {
-    padding: 12px 25px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 /* Create button */
 .create-btn {
-    background: linear-gradient(90deg, #4b4ded, #5b77ff);
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    flex: 1;
+  background: linear-gradient(90deg, #4b4ded, #5b77ff);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
 }
 
 /* Reset button */
 .reset-btn {
-    background: #fff;
-    color: #333;
-    border: 2px solid #dcdcdc;
-    flex: 1;
+  background: #fff;
+  color: #333;
+  border: 2px solid #dcdcdc;
+  flex: 1;
 }
-
