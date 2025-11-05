@@ -406,7 +406,8 @@ input[type="radio"] {
   background: #f4c5c5;
   padding: 3px 8px;
   border-radius: 10px;
-  
+  font-size:15px;
+  font-weight:600;
 }
 
 .priority.medium {
@@ -414,6 +415,8 @@ input[type="radio"] {
   background: #f4d8b1;
   padding: 3px 8px;
   border-radius: 10px;
+  font-size:15px;
+  font-weight:600;
 }
 
 .priority.low {
@@ -421,11 +424,13 @@ input[type="radio"] {
   background: #b3dfb4;
   padding: 3px 8px;
   border-radius: 10px;
+  font-size:15px;
+  font-weight:600;
 }
 
 .status.inprogress {
   color: #3f51b5;
-
+  
 
 }
 
