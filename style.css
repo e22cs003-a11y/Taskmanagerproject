@@ -322,7 +322,6 @@ input[type="radio"] {
 
 }
 
-
 /* ACTIVE TASKS */
 .active-tasks {
   background: #fff;
@@ -654,7 +653,7 @@ body {
 
 .nav {
   display: none;
-  position: fixed;   /* ✅ instead of absolute */
+  position: fixed;   
   top: 70px;
   right: 20px;
   flex-direction: column;
@@ -663,7 +662,7 @@ body {
   border-radius: 10px;
   padding: 10px 0;
   width: 160px;
-  z-index: 9999;     /* ✅ ensures it appears over content */
+  z-index: 9999;     
 }
 
 
@@ -714,7 +713,7 @@ body {
   background: linear-gradient(90deg, #4b4ded, #5b77ff);
   color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  flex: 1;
+  flex: 3;
 }
 
 /* Reset button */
@@ -723,5 +722,4 @@ body {
   color: #333;
   border: 2px solid #dcdcdc;
   flex: 1;
-  
 }
