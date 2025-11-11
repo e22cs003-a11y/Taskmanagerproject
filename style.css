@@ -94,9 +94,6 @@ body {
 }
 
 
-
-
-
 .page-header {
   /* margin: 30px 40px 0 30px; */
   margin:30px 30px 0px 30px;
@@ -641,11 +638,15 @@ body {
     gap: 10px;
   }
 
-  footer {
-    padding: 30px 20px; 
-    text-align: center;
-  }
 
+footer {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
 
   
@@ -676,5 +677,6 @@ body {
 
   footer {
     padding: 20px;
+    /* align-items:center; */
   }
 }
