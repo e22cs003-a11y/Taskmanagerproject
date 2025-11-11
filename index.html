@@ -15,9 +15,7 @@
             <h2>TaskManager</h2>
         </div>
 
-        <!-- toggle -->
-
-     <label for="menu-toggle" class="menu-icon">☰</label>
+        <label for="menu-toggle" class="menu-icon">☰</label>
 
         <nav class="nav">
             <a href="#" class="active">Dashboard</a>
@@ -26,9 +24,13 @@
         </nav>
     </header>
 
-    <section class="title">
+    <!--<section class="title">
         <div id="horizonttal-line"></div>
         <h2>Task Dashboard</h2>
+    </section>-->
+
+    <section class="page-header">
+        <h2><span></span>Task Dashboard</h2>
     </section>
 
     <main class="container">
@@ -41,29 +43,29 @@
                 <label for="AssigneeEmail"></label>
                 <input type="email" id="red-border" placeholder="Assignee Email *" required>
 
-              <div class="input-box">
-                <label for="due-date">Due Date*<span style="color:red;"></span></label>
-                <input type="date" id="due-date" name="due-date" required>
-              </div>
+                <div class="input-box">
+                    <label for="due-date">Due Date*<span style="color:red;"></span></label>
+                    <input type="date" id="due-date" name="due-date" required>
+                </div>
 
-              <div class="input-box">
-                <label for="due-time">Due Time</label>
-                <input type="time"id="due-time" name="due-time">
-              </div>
+                <div class="input-box">
+                    <label for="due-time">Due Time</label>
+                    <input type="time" id="due-time" name="due-time">
+                </div>
 
-              <div class="input-box">
-                <label for="Priority Level*">Priority Level*</label>
-                <select required>
-                    <option>Low Priority</option>
-                    <option>Medium Priority</option>
-                    <option>High Priority</option>
-                </select>
-              </div>
+                <div class="input-box">
+                    <label for="Priority Level*">Priority Level*</label>
+                    <select required>
+                        <option>Low Priority</option>
+                        <option>Medium Priority</option>
+                        <option>High Priority</option>
+                    </select>
+                </div>
 
-              <div class="input-box">
-                <label for="Estimated Hours">Estimated Hours</label>
-                <input type="number" placeholder="54">
-              </div>
+                <div class="input-box">
+                    <label for="Estimated Hours">Estimated Hours</label>
+                    <input type="number" placeholder="54">
+                </div>
 
                 <label for="Project URL"></label>
                 <input type="url" placeholder="Project URL">
@@ -72,7 +74,7 @@
                 <textarea placeholder="Task Description"></textarea>
 
                 <label>Task Progress</label>
-                <input type="range" min="0" max="100" value="0" id="progressRange" 
+                <input type="range" min="0" max="100" value="0" id="progressRange"
                     oninput="document.getElementById('progressValue').textContent=this.value+'%'">
                 <p id="progressValue" class="progress-text">0%</p>
 
@@ -94,8 +96,10 @@
                 </div>
 
                 <div class="upload-box">
-                    <p>🔗 Click to upload attachments</p> <br>
-                    <small>Supported: PDF, DOC, Images</small>
+                    <label for="fileUpload" class="upload-label">
+                        🔗 Click to upload attachments</label>
+                    <span class="sub-text"> Supported: PDF, DOC, Images </span>
+                    <input type="file" id="fileUpload" hidden>
                 </div>
 
                 <div class="btn-group">
@@ -111,7 +115,7 @@
 
         <section class="active-tasks">
             <div class="tasks-header">
-                <h3>✅ Active Tasks</h3><br><br>
+                <h2>✅ Active Tasks</h2><br><br>
                 <div class="filters">
                     <button class="active">All</button>
                     <button class="active-button">High</button>
